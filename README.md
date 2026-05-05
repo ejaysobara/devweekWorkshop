@@ -1,4 +1,4 @@
-# Parallel and Distributed Computing Assignment
+# Janky Matrix Multiplication Table from PDC Assignment
 
 This repository contains a deployable Python web application that visualizes the same matrix multiplication logic as the original assignment.
 
