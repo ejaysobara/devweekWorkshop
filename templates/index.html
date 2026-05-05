@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrix Multiplication Visualization</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Matrix Multiplication Visualization</h1>
+    <p class="subtitle">This page preserves the same matrix multiplication logic and shows the input matrices plus the computed result.</p>
+
+    <div class="matrices">
+        <section>
+            <h2>Matrix A (5x5)</h2>
+            <table>
+                <tbody>
+                    {% for row in matrix_a %}
+                    <tr>
+                        {% for value in row %}
+                        <td>{{ value }}</td>
+                        {% endfor %}
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Matrix B (5x3)</h2>
+            <table>
+                <tbody>
+                    {% for row in matrix_b %}
+                    <tr>
+                        {% for value in row %}
+                        <td>{{ value }}</td>
+                        {% endfor %}
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Result Matrix (5x3)</h2>
+            <table>
+                <tbody>
+                    {% for row in result_matrix %}
+                    <tr>
+                        {% for value in row %}
+                        <td>{{ value }}</td>
+                        {% endfor %}
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+    <p class="footer">Name: {{ name }}</p>
+</body>
+</html>
